@@ -7,6 +7,7 @@ from typing import Optional
 class ClientCreate(BaseModel):
     name: str
     country: str
+    age: Optional[int] = 30
 
 
 class ClientOut(BaseModel):
@@ -14,7 +15,7 @@ class ClientOut(BaseModel):
     name: str
     country: str
     risk_score: float
-    age: int
+    age: Optional[int]
 
     class Config:
         from_attributes = True

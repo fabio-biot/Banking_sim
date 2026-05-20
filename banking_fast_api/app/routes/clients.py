@@ -5,12 +5,13 @@ from app import models, schemas
 
 router = APIRouter(prefix="/clients", tags=["Clients"])
 
-@router.post("/")
+@router.post("/", response_model=schemas.ClientOut)
 def create_client(client: schemas.ClientCreate, db: Session = Depends(get_db)):
 
     db_client = models.Client(
         name=client.name,
         country=client.country,
+        age=client.age,
         risk_score=0
     )
 
