@@ -46,4 +46,4 @@ def seed_data():
 
 if __name__ == "__main__":
     seed_data()
-    print("Database seeded successfully 🚀")
+    print("Database seeded successfully")

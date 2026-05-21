@@ -144,13 +144,15 @@ Le script :
 make run
 ```
 
-URLs utiles (Lors du lancement, aller sur http://127.0.0.1:8000/docs !!):
+URLs utiles :
 
 ```text
-API locale:       http://127.0.0.1:8000
+Accueil API:      http://127.0.0.1:8000
 Swagger UI:       http://127.0.0.1:8000/docs
 OpenAPI schema:   http://127.0.0.1:8000/openapi.json
 ```
+
+La page d'accueil contient des liens directs vers la documentation Swagger et les routes principales.
 
 ## Lancer l'API en mode serveur
 
@@ -237,6 +239,14 @@ Table : `transactions`
 | `status` | string | `OK` ou `FLAGGED` |
 
 ## Endpoints
+
+### Accueil
+
+Menu avec liens rapides :
+
+```http
+GET /
+```
 
 ### Clients
 
